@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media(max-width: 600px) {
+    .heading {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: white;
+        background-color: pink;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .card {
+        width: 80vw;
+        margin-inline: auto;
+        margin-top: 5rem;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        gap: 3rem;
+        align-items: center;
+        padding: 5rem;
+        background: pink;
+    }
+
+    input,
+    button {
+        width: max-content;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5rem;
+    }
+
+    .bmi-btn {
+        background-color: pink;
+        color: white;
+        font-weight: 500;
+    }
+    dialog{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: #000;
+        border-radius: 1rem;
+        transform: translate(-50%,-50%);
+        padding: 5rem;
+        color: white;
+        background-color: pink;
+        font-size: 1.5rem;;
+    }
+    dialog::backdrop{
+        background-color: rgba(0,0,0,0.5)
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+}
